@@ -1,2 +1,0 @@
-# birdlabs.github.io
-wesbtiieie
