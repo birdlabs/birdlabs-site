@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 body {
   background-color: navy;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 h1 {
   color: powderblue;
 }
 p {
+  color: red;
+}
+a:link {
+  color: pink;
+}
+a:visited {
+  color: violet;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
   color: red;
 }
 .animated_rainbow_1 {
