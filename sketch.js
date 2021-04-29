@@ -27,5 +27,5 @@ function togglePlaying() {
 function draw() {
  //background(0);
  song.setVolume(sliderVol.value());
- song.rate
+ song.rate(sliderRate.value());
 }
