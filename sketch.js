@@ -5,7 +5,7 @@ var button;
 
 function setup() {
  createCanvas(200,200);
- song = createAudio("hexagen2612samp.mp3"); 
+ song = loadSound("hexagen2612samp.mp3"); 
  sliderVol = createSlider(0, 1, 0.5, 0.01);
  sliderRate = createSlider(0, 2, 1, 0.01);
  button = createButton("play");
@@ -16,7 +16,7 @@ function togglePlaying() {
   if (!song.isPlaying()) { 
    song.loop();
    song.setVolume(0.5);
-   button.html("pause");
+   button.html("stop");
   }
   else {
    song.pause();
