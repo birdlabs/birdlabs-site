@@ -35,7 +35,7 @@ function togglePlaying() {
 function filterStuff() {
  if (isConnected) {
   song.disconnect();
-  filter.process(song,mouseX,mouseY);
+  filter.process(song);
   isConnected = false;
   filtButton.html("filter off");
  }
@@ -47,11 +47,11 @@ function filterStuff() {
 }
 
 function draw() {
- //background(0);
+ background(0);
  song.setVolume(sliderVol.value());
  song.rate(sliderRate.value());
  song.pan(sliderPan.value());
- //filterFreq = map(mouseX, 0, width, 10, 22050);
- //filterWidth = map(mouseY, 0, height, 0, 90);
- //filter.set(filterFreq, filterWidth);
+ filterFreq = map(mouseX, 0, width, 10, 22050);
+ filterWidth = map(mouseY, 0, height, 0, 90);
+ filter.set(filterFreq, filterWidth);
 }
