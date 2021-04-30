@@ -8,7 +8,7 @@ let filter, filterFreq, filterWidth, fft;
 let isConnected = true;
 
 function setup() {
- createCanvas(300,200);
+ createCanvas(710,256);
  song = loadSound("hexagen2612samp.mp3");
  sliderVol = createSlider(0, 1, 0.5, 0.01);
  sliderRate = createSlider(0, 10, 1, 0.01);
