@@ -79,7 +79,7 @@ function draw() {
  song.rate(sliderRate.value());
  song.pan(sliderPan.value());
  filterFreq = map(mouseX, 0, width, 10, 22050);
- filterWidth = map(mouseY, 0, height, 20, 90);
+ filterWidth = map(mouseY, 0, height-50, 0, 90);
  filterRes = map(mouseY, 0, height, 15, 5);
  bpFilter.set(filterFreq, filterWidth);
  lpFilter.set(filterFreq, filterRes);
